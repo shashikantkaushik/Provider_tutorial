@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider_tutorial/provider/auth_provider.dart';
 import 'package:provider_tutorial/provider/count_provider.dart';
 import 'package:provider_tutorial/provider/favourite_provider.dart';
 import 'package:provider_tutorial/provider/opacity_provider.dart';
@@ -32,7 +33,8 @@ class MyApp extends StatelessWidget {
         create: (_) => FavouriteProvider(),),
       ChangeNotifierProvider(
         create: (_) => ThemeChanger(),),
-
+      ChangeNotifierProvider(
+        create: (_) => AuthProvider(),),
 
     ],
     child:Builder(
