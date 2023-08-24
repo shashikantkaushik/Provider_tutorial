@@ -7,6 +7,7 @@ import 'package:provider_tutorial/provider/theme_changer_provider.dart';
 import 'package:provider_tutorial/screens/count_example.dart';
 import 'package:provider_tutorial/screens/dark_theme.dart';
 import 'package:provider_tutorial/screens/favourite.dart';
+import 'package:provider_tutorial/screens/login.dart';
 import 'package:provider_tutorial/screens/notifyListenerScreen.dart';
 import 'package:provider_tutorial/screens/opacity_example.dart';
 import 'package:provider_tutorial/stfl_counter.dart';
@@ -57,7 +58,7 @@ class MyApp extends StatelessWidget {
             primaryColor: Colors.red,
             iconTheme: IconThemeData(color: Colors.red),
           ),
-          home:  NotifiyListenerScreen(),
+          home:  LoginScreen(),
         );
       },
     ) );

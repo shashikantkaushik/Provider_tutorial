@@ -24,7 +24,8 @@ class _LoginScreenState extends State<LoginScreen> {
     final authProvider = Provider.of<AuthProvider>(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sign Up Api'),
+        title: const Text('Provider'),
+        backgroundColor: Colors.green,
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -40,8 +41,10 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             SizedBox(height: 20,),
             TextFormField(
+              obscureText: true,
               controller: passwordController,
               decoration: InputDecoration(
+
                   hintText: 'Password'
               ),
             ),
@@ -59,7 +62,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Center(
                   child:
                   authProvider.loading ? CircularProgressIndicator():
-                  Text('Login'),),
+                  Text('Login',style: TextStyle(color: Colors.white,fontSize: 20
+                      ,fontWeight: FontWeight.w700),),),
               ),
             )
           ],
